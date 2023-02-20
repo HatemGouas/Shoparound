@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop around</title>
+    <link rel="stylesheet" href="shoparound.css">
+</head>
+<style>
+body{
+    margin: 0;
+    font-family: sans-serif;
+    }
+    
+    table{
+        border-spacing: 0;
+    }
+    td{
+        padding: 0;
+    }
+    img{
+        border: 0;
+    }
+    .tab1{
+        width: 100%;
+        background-color: #fff3e0;
+    }
+    .navbar{
+     width: 100%;
+     max-width: 650px;
+     background-color: white;
+     padding: 0.3cm 0.1cm;
+     text-align: center;
+    }
+    .mrigl{
+        display: inline-block;
+        padding: 0.3cm 0.2cm ;
+    }
+    .mrigl a{
+        font-family: Arial;
+        color: #424242;
+        text-decoration: none;
+        font-size: 0.37cm;
+        font-weight: 600;
+    }
+    .tab2{
+        width: 100%;
+        background: linear-gradient(180deg, #fff3e0 50%, white 50%);
+    }
+    .size{
+        width: 100%;
+        max-width: 650px;
+    }
+    .tab3{
+        width: 100%;
+        background-color: white;
+    }
+    .button1{
+        padding: 0.4cm 0.9cm;
+        background-color: #f44336;
+        text-decoration: none;
+        font-size: 0.38cm;
+        color: white;
+    }
+    .tab4{
+        width: 100%;
+        background-color: #fff3e0;
+        padding: 1cm 0cm 1.5cm 0;
+    }
+    .hawi-card1{
+        width: 100%;
+        text-align: center;
+    }
+    .border-card1{
+        width: 100%;
+        max-width: 322px;
+        display: inline-block;
+        padding: 0 0 0 0;
+    }
+    .card1{
+        background-color: white;
+    }
+    .button2{
+        padding: 0.4cm 0.3cm;
+        border: 1px solid #42424228;
+        background-color: inherit;
+        text-decoration: none;
+        font-size: 0.38cm;
+        color: #424242;
+    }
+    .button3{
+        padding: 0.4cm 0.7cm;
+        background-color: #f44336;
+        text-decoration: none;
+        font-size: 0.38cm;
+        color: white;
+    }
+    .border-card2{
+        width: 100%;
+        max-width: 210px;
+        display: inline-block;
+        padding: 0 0 0 0;
+    }
+    .card2{
+        background-color: white;
+    }
+    .hawi-card3{
+        width: 100%;
+        text-align: center;
+        background-color: white;
+        padding-bottom: 1.5cm;
+    }
+    .tab5{
+        width: 100%;
+        background-color: white;
+        padding: 1cm 0.3cm;
+    }
+    .bot{
+        background-color: #f44336d6;
+        color:white;
+        padding: 0.3cm 0.3cm;
+        font-size: 0.3cm;
+        width: 100px;
+    }
+    .bot2{
+        font-size: 0.75cm;
+        font-weight: 600;
+        color: #424242;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 0.8cm;
+    }
+    .hawi-card4{
+        width: 100%;
+        padding: 1cm 0 0 0;
+        text-align: center;
+    }
+    .card4{
+        width: 100%;
+        max-width: 315px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: 0.5cm;
+    }
+    .bot3{
+        color: #424242f7;
+        font-family:Helvetica;
+        line-height: 30px;
+        font-size: 0.45cm;
+    }
+    .buttme{
+        font-size: 0.6cm;
+        font-weight: 600;
+        color: #424242;
+        border: 3px dashed #4242424c;
+        width: 150px;
+        text-align: center;
+        padding: 0.25cm 0;
+        margin-top: 0.3cm;
+    }
+    .tab6{
+        width: 100%;
+        background-color: #fff3e0;
+        padding: 1cm 0;
+    }
+    .hawi-card5{
+        width: 100%;
+        background-color: white;
+        padding: 0.8cm 0.3cm 1.6cm 0.3cm;
+        text-align: center;
+    }
+    .card5{
+        width: 100%;
+        max-width: 300px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: 0.5cm;
+    }
+    .back{
+        width: 100%;
+        background-image: url("https://i.imgur.com/6DYPQBo.jpg");
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        max-width: 650px;
+        padding: 20%;
+        margin-top: 0.3cm;
+    }
+    .tab7{
+        width: 100%;
+        background-color: #fff3e0;
+        padding: 1cm 0.2cm;
+    }
+    .img-back{
+        background-image: url("https://i.imgur.com/LwjLaHw.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        max-width: 590px;
+    }
+    .color-back{
+        background-color: rgba(0, 0, 0, 0.582);
+        background-position: center;
+        background-size:100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        max-width: 590px;
+        padding: 0 0.2cm;
+    }
+    .tabfinal{
+        width: 100%;
+        background-color: white;
+        padding: 1cm 0;
+    }
+    .hawi-opt{
+        width: 100%;
+        text-align: center;
+    }
+    .opt{
+        max-width: 320px;
+        width: 100%;
+        display: inline-block;
+        padding-top: 0.2cm;
+    }
+    .hawi-op{
+        width: 100%;
+    }
+    .op{
+    width: 150px;
+    display: inline-block;
+     padding: 0 0 0 0.6cm;
+    }
+</style>
+<body>
+     <table class="tab1">
+        <tr>
+            <td>
+                <center>
+                    <table style="padding:1cm 0.2cm;">
+                        <tr>
+                            <td>
+                                <img src="https://i.imgur.com/pUc5x1R.png" alt="" width="220px">
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="navbar">
+                        <tr>
+                            <td>
+                                <div style="text-align: center;">
+                                    <center>
+                                    <div class="mrigl"><a href="#" class="bar">NEW IN</a></div>
+                                    <div class="mrigl"><a href="#" class="bar"> APPAREL</a></div>
+                                    <div class="mrigl"><a href="#" class="bar">SHOES</a></div>
+                                    <div class="mrigl"><a href="#" class="bar">ACCESSORIES</a></div>
+                                    <div class="mrigl"><a href="#" class="bar">CURVE</a></div>
+                                    <div class="mrigl"><a href="#" class="bar">PETITE</a></div>
+                                    <div class="mrigl"><a href="#" class="bar">WEEKLY SALE</a></div>
+                                </center>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </center>
+            </td>       
+        </tr>
+     </table>
+     <table class="tab2">
+        <tr>
+            <td>
+                <center>
+                    <table class="size">
+                        <tr>
+                            <td>
+                                 <img src="https://i.imgur.com/beTSsHO.jpg" alt="" width="100%">
+                            </td>
+                        </tr>
+                    </table>
+                </center>
+            </td>
+        </tr>
+     </table>
+     <table class="tab3">
+        <tr>
+            <td>
+               <center>
+                <table class="size" style="text-align: center;" >
+                    <tr>
+                        <td style="padding: 1cm 0.1cm;">
+                         <center>
+                          <div style="font-family:Helvetica; font-size: 1cm; color:#424242;min-width:300px;width: 100%;max-width: 500px;">Spend $250+ and get your custom gift today</div>
+                          <div style="font-family: Lucida Sans Unicode; font-size: 0.45cm; color:#424242;min-width:300px;width: 100%;max-width: 500px;line-height: 30px;margin-top: 0.5cm;">Recognised as a global leader in speciality sun, Shop Around is the premium destination for fashion, luxury and sports eyewear.
+                            See how the light plays with hues, silver and gold.</div>
+                            <div style="margin-top: 1cm;"><a href="#" class="button1">SHOP NOW</a></div>
+                            <div style="margin-top:1cm;"><a href="#" style="color: #424242; font-size: 0.3cm;">FIND A STORE</a></div>
+                        </center>
+                        </td>
+                    </tr>
+                </table>
+               </center>
+            </td>
+        </tr>
+     </table>
+     <table class="tab4">
+        <tr>
+            <td>
+                <center>
+                    <table class="size">
+                        <tr>
+                            <td style="text-align: center;">
+                               <div style="color: #424242;font-size: 0.6cm;">Exclusive Offer</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;padding: 0.3cm 0 0.5cm 0;"> 
+                               <center> <div style=" width: 50px;height: 0.07cm; background-color: #424242;"></div></center>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="hawi-card1">
+                                <table class="border-card1">
+                                 <tr>
+                                    <td >
+                                        <table class="card1" >
+                                            <tr>
+                                                <td style="width: 100%;background: linear-gradient(180deg, #fff3e0 20px, white 20px);height: 40px;padding: 0.2cm 0 0 0;">
+                                                    
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding: 0 0.8cm 1.2cm 0.8cm;width: 100%;">
+                                                 <img src="https://i.imgur.com/yM44FpJ.jpg" alt="" width="100%">
+                                                 <div style="font-family: Lucida Sans Unicode;color: #424242;font-size: 0.65cm;font-weight:600;margin-top: 0.5cm;">Girella</div>
+                                                 <div style="font-size: 0.65cm;font-family:Trebuchet MS ;color: #f44336;margin-top: 0.5cm;"><del style="color: #424242ae;">$100</del>   $89</div>
+                                                 <div style="margin-top: 1cm;"><a href="#" class="button2">SHOP NOW</a></div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                 </tr>
+                                </table>
+                
+                                <table class="border-card1">
+                                    <tr>
+                                       <td>
+                                           <table class="card1">
+                                               <tr>
+                                                   <td style="width: 100%;background: linear-gradient(180deg, #fff3e0 20px, white 20px);height: 40px;padding: 0.2cm 0 0 0;">
+                                                         <img src="https://i.imgur.com/9HkWBQl.png" alt=""  >
+                                                   </td>
+                                               </tr>
+                                               <tr>
+                                                   <td style="padding: 0 0.8cm 1.2cm 0.8cm;width: 100%;">
+                                                    <img src="https://i.imgur.com/aET1vha.jpg" alt="" width="100%">
+                                                    <div style="font-family: Lucida Sans Unicode;color: #424242;font-size: 0.65cm;font-weight:600;margin-top: 0.5cm;">Doppio Purple</div>
+                                                    <div style="font-size: 0.65cm;font-family:Trebuchet MS ;color: #f44336;margin-top: 0.5cm;"><del style="color: #424242ae;">$100</del>   $89</div>
+                                                    <div style="margin-top: 1cm;"><a href="#" class="button2">SHOP NOW</a></div>
+                                                   </td>
+                                               </tr>
+                                           </table>
+                                       </td>
+                                    </tr>
+                                   </table>
+                
+                                   <table class="border-card1">
+                                    <tr>
+                                       <td>
+                                           <table class="card1">
+                                               <tr>
+                                                   <td style="width: 100%;background: linear-gradient(180deg, #fff3e0 20px, white 20px);height: 40px;padding: 0.2cm 0 0 0;">
+                                                    <img src="https://i.imgur.com/9HkWBQl.png" alt=""  >
+                                                   </td>
+                                               </tr>
+                                               <tr>
+                                                   <td style="padding: 0 0.8cm 1.2cm 0.8cm;width: 100%;">
+                                                    <img src="https://i.imgur.com/bGwiUP5.jpg" alt="" width="100%">
+                                                    <div style="font-family: Lucida Sans Unicode;color: #424242;font-size: 0.65cm;font-weight:600;margin-top: 0.5cm;">Gattina Brown</div>
+                                                    <div style="font-size: 0.65cm;font-family:Trebuchet MS ;color: #f44336;margin-top: 0.5cm;"><del style="color: #424242ae;">$100</del>   $89</div>
+                                                    <div style="margin-top: 1cm;"><a href="#" class="button2">SHOP NOW</a></div>
+                                                   </td>
+                                               </tr>
+                                           </table>
+                                       </td>
+                                    </tr>
+                                   </table>
+                
+                                   <table class="border-card1">
+                                    <tr>
+                                       <td>
+                                           <table class="card1">
+                                               <tr>
+                                                   <td style="width: 100%;background: linear-gradient(180deg, #fff3e0 20px, white 20px);height: 40px;padding: 0.2cm 0 0 0;">
+                                                 
+                                                   </td>
+                                               </tr>
+                                               <tr>
+                                                   <td style="padding: 0 0.8cm 1.2cm 0.8cm;width: 100%;">
+                                                    <img src="https://i.imgur.com/Z3VuiDR.jpg" alt="" width="100%">
+                                                    <div style="font-family: Lucida Sans Unicode;color: #424242;font-size: 0.65cm;font-weight:600;margin-top: 0.5cm;">Puntini Marble</div>
+                                                    <div style="font-size: 0.65cm;font-family:Trebuchet MS ;color: #f44336;margin-top: 0.5cm;"><del style="color: #424242ae;">$100</del>   $89</div>
+                                                    <div style="margin-top: 1cm;"><a href="#" class="button2">SHOP NOW</a></div>
+                                                   </td>
+                                               </tr>
+                                           </table>
+                                       </td>
+                                    </tr>
+                                </td>
+                            </tr>
+            
+                    </table>
+                    <table class="size" style="padding: 1.3cm 0 0 0;" >
+
+                        <tr>
+                            <td style="text-align: center;">
+                               <div style="color: #424242;font-size: 0.6cm;">Featured products</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;padding: 0.3cm 0 1cm 0;"> 
+                               <center> <div style=" width: 50px;height: 0.07cm; background-color: #424242;"></div></center>
+                            </td>
+                        </tr>
+                        
+                                <tr>
+                                    <td class="hawi-card1"  >
+                                        <table class="border-card2" >
+                                            <tr>
+                                                <td>
+                                                   <table class="card1">
+                                                    <tr>
+                                                        <td style="width: 100%;background: linear-gradient(180deg, #fff3e0 20px, white 20px);height: 40px;padding: 0.2cm 0 0 0;">
+                                                      
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="padding: 0 0.8cm 1.2cm 0.8cm;width: 100%;">
+                                                         <img src="https://i.imgur.com/ZTg62Qj.jpg" alt="" width="100%">
+                                                         <div style="font-family: Lucida Sans Unicode;color: #424242;font-size: 0.65cm;font-weight:600;margin-top: 0.5cm;">Puntini Marble</div>
+                                                         <div style="font-size: 0.65cm;font-family:Trebuchet MS ;color: #f44336;margin-top: 0.5cm;"><del style="color: #424242ae;">$100</del>   $89</div>
+                                                         <div style="margin-top: 1cm;"><a href="#" class="button2">SHOP NOW</a></div>
+                                                        </td>
+                                                    </tr>
+                                                   </table>    
+                                                </td>
+                                            </tr>
+                                        </table>
+                                       
+                                        <table class="border-card2" >
+                                            <tr>
+                                                <td>
+                                                   <table class="card1">
+                                                    <tr>
+                                                        <td style="width: 100%;background: linear-gradient(180deg, #fff3e0 20px, white 20px);height: 40px;padding: 0.2cm 0 0 0;">
+                                                            <img src="https://i.imgur.com/9HkWBQl.png" alt="" width="100%" >
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="padding: 0 0.8cm 1.2cm 0.8cm;width: 100%;">
+                                                         <img src="https://i.imgur.com/hqJG9VP.jpg" alt="" width="100%">
+                                                         <div style="font-family: Lucida Sans Unicode;color: #424242;font-size: 0.65cm;font-weight:600;margin-top: 0.5cm;">Puntini Marble</div>
+                                                         <div style="font-size: 0.65cm;font-family:Trebuchet MS ;color: #f44336;margin-top: 0.5cm;"><del style="color: #424242ae;">$100</del>   $89</div>
+                                                         <div style="margin-top: 1cm;"><a href="#" class="button2">SHOP NOW</a></div>
+                                                        </td>
+                                                    </tr>
+                                                   </table>    
+                                                </td>
+                                            </tr>
+                                        </table>
+                                       
+                                        <table class="border-card2" >
+                                            <tr>
+                                                <td>
+                                                   <table class="card1">
+                                                    <tr>
+                                                        <td style="width: 100%;background: linear-gradient(180deg, #fff3e0 20px, white 20px);height: 40px;padding: 0.2cm 0 0 0;">
+                                                            <img src="https://i.imgur.com/9HkWBQl.png" alt="" width="100%" >
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="padding: 0 0.8cm 1.2cm 0.8cm;width: 100%;">
+                                                         <img src="https://i.imgur.com/ty7afCp.jpg" alt="" width="100%">
+                                                         <div style="font-family: Lucida Sans Unicode;color: #424242;font-size: 0.65cm;font-weight:600;margin-top: 0.5cm;">Puntini Marble</div>
+                                                         <div style="font-size: 0.65cm;font-family:Trebuchet MS ;color: #f44336;margin-top: 0.5cm;"><del style="color: #424242ae;">$100</del>   $89</div>
+                                                         <div style="margin-top: 1cm;"><a href="#" class="button2">SHOP NOW</a></div>
+                                                        </td>
+                                                    </tr>
+                                                   </table>    
+                                                </td>
+                                            </tr>
+                                        </table>
+                                       
+                                        <table class="border-card2" >
+                                            <tr>
+                                                <td>
+                                                   <table class="card1">
+                                                    <tr>
+                                                        <td style="width: 100%;background: linear-gradient(180deg, #fff3e0 20px, white 20px);height: 40px;padding: 0.2cm 0 0 0;">
+                                                            <img src="https://i.imgur.com/9HkWBQl.png" alt="" width="100%" >
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="padding: 0 0.8cm 1.2cm 0.8cm;width: 100%;">
+                                                         <img src="https://i.imgur.com/cfx75Gx.jpg" alt="" width="100%">
+                                                         <div style="font-family: Lucida Sans Unicode;color: #424242;font-size: 0.65cm;font-weight:600;margin-top: 0.5cm;">Puntini Marble</div>
+                                                         <div style="font-size: 0.65cm;font-family:Trebuchet MS ;color: #f44336;margin-top: 0.5cm;"><del style="color: #424242ae;">$100</del>   $89</div>
+                                                         <div style="margin-top: 1cm;"><a href="#" class="button2">SHOP NOW</a></div>
+                                                        </td>
+                                                    </tr>
+                                                   </table>    
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <table class="border-card2" >
+                                            <tr>
+                                                <td>
+                                                   <table class="card1">
+                                                    <tr>
+                                                        <td style="width: 100%;background: linear-gradient(180deg, #fff3e0 20px, white 20px);height: 40px;padding: 0.2cm 0 0 0;">
+                                                      
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="padding: 0 0.8cm 1.2cm 0.8cm;width: 100%;">
+                                                         <img src="https://i.imgur.com/ZTg62Qj.jpg" alt="" width="100%">
+                                                         <div style="font-family: Lucida Sans Unicode;color: #424242;font-size: 0.65cm;font-weight:600;margin-top: 0.5cm;">Puntini Marble</div>
+                                                         <div style="font-size: 0.65cm;font-family:Trebuchet MS ;color: #f44336;margin-top: 0.5cm;"><del style="color: #424242ae;">$100</del>   $89</div>
+                                                         <div style="margin-top: 1cm;"><a href="#" class="button2">SHOP NOW</a></div>
+                                                        </td>
+                                                    </tr>
+                                                   </table>    
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <table class="border-card2" >
+                                            <tr>
+                                                <td>
+                                                   <table class="card1">
+                                                    <tr>
+                                                        <td style="width: 100%;background: linear-gradient(180deg, #fff3e0 20px, white 20px);height: 40px;padding: 0.2cm 0 0 0;">
+                                                            <img src="https://i.imgur.com/9HkWBQl.png" alt="" width="100%" >
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="padding: 0 0.8cm 1.2cm 0.8cm;width: 100%;">
+                                                         <img src="https://i.imgur.com/hqJG9VP.jpg" alt="" width="100%">
+                                                         <div style="font-family: Lucida Sans Unicode;color: #424242;font-size: 0.65cm;font-weight:600;margin-top: 0.5cm;">Puntini Marble</div>
+                                                         <div style="font-size: 0.65cm;font-family:Trebuchet MS ;color: #f44336;margin-top: 0.5cm;"><del style="color: #424242ae;">$100</del>   $89</div>
+                                                         <div style="margin-top: 1cm;"><a href="#" class="button2">SHOP NOW</a></div>
+                                                        </td>
+                                                    </tr>
+                                                   </table>    
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                    </td>
+                                </tr>
+  
+                                
+                    </table>
+
+                    <table class="size" style="padding:1cm 0 1.3cm 0;">
+                        <tr>
+                            <td style="text-align: center;">
+                               <div style="color: #424242;font-size: 0.6cm;">Exclusive Offer</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;padding: 0.3cm 0 0.5cm 0;"> 
+                               <center> <div style=" width: 50px;height: 0.07cm; background-color: #424242;"></div></center>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="hawi-card1">
+                                 
+                            
+                                <table class="border-card1" style="">
+                                    <tr>
+                                       <td>
+                                          <table style="width: 100%; text-align: center;">
+                                            <tr>
+                                                <td style="text-align: center;width: 100%;">
+                                           <table class="card1" style="width: 157px;display: inline-block;">
+                                            <tr>
+                                                <td style="width:157px ;background: linear-gradient(180deg, #fff3e0 20px, white 20px);height: 40px;padding: 0.2cm 0 0 0;">
+                                                    
+                                                </td>
+                                            </tr>
+                                               <tr>
+                                                   <td style="padding: 0 0cm 1.2cm 0cm;width: 100%;text-align: center;">
+                                                    <img src="https://i.imgur.com/vdf8hL7.jpg" alt="" width="100%" style="">
+                                                    <div style="font-family: Lucida Sans Unicode;color: #424242;font-size: 0.65cm;font-weight:600;margin-top: 0.5cm;">Girella</div>
+                                                    <div style="font-size: 0.65cm;font-family:Trebuchet MS ;color: #f44336;margin-top: 0.5cm;"><del style="color: #424242ae;">$100</del>   $89</div>
+                                                    <div style="margin-top: 1cm;"><a href="#" class="button2" style="padding:0.1cm 0.1cm;" >SHOP NOW</a></div>
+                                                   </td>
+                                               </tr>
+                                           </table>
+   
+                                           <table class="card1" style="width:157px;display: inline-block;" >
+                                               <tr>
+                                                   <td style="width: 157px;background: linear-gradient(180deg, #fff3e0 20px, white 20px);height: 40px;padding: 0.2cm 0 0 0;">
+                                                    <img src="https://i.imgur.com/9HkWBQl.png" alt="" width="100%" >
+                                                   </td>
+                                               </tr>
+                                               <tr>
+                                                   <td style="padding: 0 0cm 1.2cm 0cm;width: 100%;text-align: center;">
+                                                    <img src="https://i.imgur.com/ZTg62Qj.jpg" alt="" width="125px" style="">
+                                                    <div style="font-family: Lucida Sans Unicode;color: #424242;font-size: 0.65cm;font-weight:600;margin-top: 0.5cm;">Girella</div>
+                                                    <div style="font-size: 0.65cm;font-family:Trebuchet MS ;color: #f44336;margin-top: 0.5cm;"><del style="color: #424242ae;">$100</del>   $89</div>
+                                                    <div style="margin-top: 1cm;"><a href="#" class="button2" style="padding:0.1cm 0.1cm;" >SHOP NOW</a></div>
+                                                   </td>
+                                               </tr>
+                                           </table>
+                                           </td>
+                                           </tr>
+                                       </table>
+   
+                                       </td>
+                                    </tr>
+                                   </table>
+
+                                   <table class="border-card1" style="">
+                                    <tr>
+                                       <td>
+                                          <table style="width: 100%; text-align: center;">
+                                            <tr>
+                                                <td style="text-align: center;width: 100%;">
+                                           <table class="card1" style="width: 157px;display: inline-block;">
+                                            <tr>
+                                                <td style="width:157px ;background: linear-gradient(180deg, #fff3e0 20px, white 20px);height: 40px;padding: 0.2cm 0 0 0;">
+                                                    
+                                                </td>
+                                            </tr>
+                                               <tr>
+                                                   <td style="padding: 0 0cm 1.2cm 0cm;width: 100%;text-align: center;">
+                                                    <img src="https://i.imgur.com/vdf8hL7.jpg" alt="" width="100%" style="">
+                                                    <div style="font-family: Lucida Sans Unicode;color: #424242;font-size: 0.65cm;font-weight:600;margin-top: 0.5cm;">Girella</div>
+                                                    <div style="font-size: 0.65cm;font-family:Trebuchet MS ;color: #f44336;margin-top: 0.5cm;"><del style="color: #424242ae;">$100</del>   $89</div>
+                                                    <div style="margin-top: 1cm;"><a href="#" class="button2" style="padding:0.1cm 0.1cm;" >SHOP NOW</a></div>
+                                                   </td>
+                                               </tr>
+                                           </table>
+   
+                                           <table class="card1" style="width:157px;display: inline-block;" >
+                                               <tr>
+                                                   <td style="width: 157px;background: linear-gradient(180deg, #fff3e0 20px, white 20px);height: 40px;padding: 0.2cm 0 0 0;">
+                                                    <img src="https://i.imgur.com/9HkWBQl.png" alt="" width="100%" >
+                                                   </td>
+                                               </tr>
+                                               <tr>
+                                                   <td style="padding: 0 0cm 1.2cm 0cm;width: 100%;text-align: center;">
+                                                    <img src="https://i.imgur.com/aET1vha.jpg" alt="" width="125px" style="">
+                                                    <div style="font-family: Lucida Sans Unicode;color: #424242;font-size: 0.65cm;font-weight:600;margin-top: 0.5cm;">Girella</div>
+                                                    <div style="font-size: 0.65cm;font-family:Trebuchet MS ;color: #f44336;margin-top: 0.5cm;"><del style="color: #424242ae;">$100</del>   $89</div>
+                                                    <div style="margin-top: 1cm;"><a href="#" class="button2" style="padding:0.1cm 0.1cm;" >SHOP NOW</a></div>
+                                                   </td>
+                                               </tr>
+                                           </table>
+                                           </td>
+                                           </tr>
+                                       </table>
+   
+                                       </td>
+                                    </tr>
+                                   </table>
+
+ 
+                                   <table class="border-card1" style="">
+                                    <tr>
+                                       <td>
+                                          <table style="width: 100%; text-align: center;">
+                                            <tr>
+                                                <td style="text-align: center;width: 100%;">
+                                           <table class="card1" style="width: 157px;display: inline-block;">
+                                            <tr>
+                                                <td style="width:157px ;background: linear-gradient(180deg, #fff3e0 20px, white 20px);height: 40px;padding: 0.2cm 0 0 0;">
+                                                    <img src="https://i.imgur.com/9HkWBQl.png" alt="" width="100%" >
+                                                </td>
+                                            </tr>
+                                               <tr>
+                                                   <td style="padding: 0 0cm 1.2cm 0cm;width: 100%;text-align: center;">
+                                                    <img src="https://i.imgur.com/vdf8hL7.jpg" alt="" width="100%" style="">
+                                                    <div style="font-family: Lucida Sans Unicode;color: #424242;font-size: 0.65cm;font-weight:600;margin-top: 0.5cm;">Girella</div>
+                                                    <div style="font-size: 0.65cm;font-family:Trebuchet MS ;color: #f44336;margin-top: 0.5cm;"><del style="color: #424242ae;">$100</del>   $89</div>
+                                                    <div style="margin-top: 1cm;"><a href="#" class="button2" style="padding:0.1cm 0.1cm;" >SHOP NOW</a></div>
+                                                   </td>
+                                               </tr>
+                                           </table>
+   
+                                           <table class="card1" style="width:157px;display: inline-block;" >
+                                               <tr>
+                                                   <td style="width: 157px;background: linear-gradient(180deg, #fff3e0 20px, white 20px);height: 40px;padding: 0.2cm 0 0 0;">
+                                                   </td>
+                                               </tr>
+                                               <tr>
+                                                   <td style="padding: 0 0cm 1.2cm 0cm;width: 100%;text-align: center;">
+                                                    <img src="https://i.imgur.com/ZTg62Qj.jpg" alt="" width="125px" style="">
+                                                    <div style="font-family: Lucida Sans Unicode;color: #424242;font-size: 0.65cm;font-weight:600;margin-top: 0.5cm;">Girella</div>
+                                                    <div style="font-size: 0.65cm;font-family:Trebuchet MS ;color: #f44336;margin-top: 0.5cm;"><del style="color: #424242ae;">$100</del>   $89</div>
+                                                    <div style="margin-top: 1cm;"><a href="#" class="button2" style="padding:0.1cm 0.1cm;" >SHOP NOW</a></div>
+                                                   </td>
+                                               </tr>
+                                           </table>
+                                           </td>
+                                           </tr>
+                                       </table>
+   
+                                       </td>
+                                    </tr>
+                                   </table>
+
+                                   <table class="border-card1" style="">
+                                    <tr>
+                                       <td>
+                                          <table style="width: 100%; text-align: center;">
+                                            <tr>
+                                                <td style="text-align: center;width: 100%;">
+                                           <table class="card1" style="width: 157px;display: inline-block;">
+                                            <tr>
+                                                <td style="width:157px ;background: linear-gradient(180deg, #fff3e0 20px, white 20px);height: 40px;padding: 0.2cm 0 0 0;">
+                                                    
+                                                </td>
+                                            </tr>
+                                               <tr>
+                                                   <td style="padding: 0 0cm 1.2cm 0cm;width: 100%;text-align: center;">
+                                                    <img src="https://i.imgur.com/vdf8hL7.jpg" alt="" width="100%" style="">
+                                                    <div style="font-family: Lucida Sans Unicode;color: #424242;font-size: 0.65cm;font-weight:600;margin-top: 0.5cm;">Girella</div>
+                                                    <div style="font-size: 0.65cm;font-family:Trebuchet MS ;color: #f44336;margin-top: 0.5cm;"><del style="color: #424242ae;">$100</del>   $89</div>
+                                                    <div style="margin-top: 1cm;"><a href="#" class="button2" style="padding:0.1cm 0.1cm;" >SHOP NOW</a></div>
+                                                   </td>
+                                               </tr>
+                                           </table>
+   
+                                           <table class="card1" style="width:157px;display: inline-block;" >
+                                               <tr>
+                                                   <td style="width: 157px;background: linear-gradient(180deg, #fff3e0 20px, white 20px);height: 40px;padding: 0.2cm 0 0 0;">
+                                                    <img src="https://i.imgur.com/9HkWBQl.png" alt="" width="100%" >
+                                                   </td>
+                                               </tr>
+                                               <tr>
+                                                   <td style="padding: 0 0cm 1.2cm 0cm;width: 100%;text-align: center;">
+                                                    <img src="https://i.imgur.com/aET1vha.jpg" alt="" width="125px" style="">
+                                                    <div style="font-family: Lucida Sans Unicode;color: #424242;font-size: 0.65cm;font-weight:600;margin-top: 0.5cm;">Girella</div>
+                                                    <div style="font-size: 0.65cm;font-family:Trebuchet MS ;color: #f44336;margin-top: 0.5cm;"><del style="color: #424242ae;">$100</del>   $89</div>
+                                                    <div style="margin-top: 1cm;"><a href="#" class="button2" style="padding:0.1cm 0.1cm;" >SHOP NOW</a></div>
+                                                   </td>
+                                               </tr>
+                                           </table>
+                                           </td>
+                                           </tr>
+                                       </table>
+   
+                                       </td>
+                                    </tr>
+                                   </table>
+
+                                   
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td style="text-align: center;padding: 1cm 0 0 0;">
+                                   <div style="color: #424242;font-size: 0.6cm;">Recommended For You</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;padding: 0.3cm 0 0.5cm 0;"> 
+                                   <center> <div style=" width: 50px;height: 0.07cm; background-color: #424242;"></div></center>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="hawi-card3">
+                                     <table style="width: 100%;">
+                                        <tr>
+                                            <td style="width: 100%;background: linear-gradient(180deg, #fff3e0 20px, white 20px);height: 40px;padding: 0.2cm 0 0 0;">
+                                                <img src="https://i.imgur.com/9HkWBQl.png" alt="" width="200px" >
+                                            </td>
+                                        </tr>
+                                     </table>
+                                     <center>
+                                     <table style="max-width: 600px;width: 100%;text-align: center;padding: 0.4cm 0.3cm;">
+                                        <tr>
+                                          <td style="width: 100%;">
+                                               <img src="https://i.imgur.com/bnmtEUc.jpg" alt="" width="100%">
+                                          </td>
+                                        </tr>
+                                     </table>
+                                    </center>
+                                    <center>
+                                        <div style="font-size: 0.8cm ;color: #424242;padding:0.5cm 0.3cm;font-family:Helvetica;">Giuffa Limited</div>
+                                        <div style="font-size: 0.4cm ;color: black;font-family:Lucida Sans Unicode;margin-top: 0.3cm;padding: 0 0.3cm;">This oversized design is the ultimate luxury piece for this season. The deep lenses and lightweight material gives you a delicate yet statement look that compliments a variety of styles. UV400 lenses.</div>
+                                        <div style="font-size: 0.65cm;font-family:Verdana;color: #f44336;margin-top: 0.8cm;"><del style="color: #424242d8;">$100</del>   $89</div>
+                                        <div style="margin-top: 1.2cm;"><a href="#" class="button3">SHOP NOW</a></div>
+                                    </center>
+                                </td>
+                            </tr>
+            
+            
+                    </table>
+
+                </center>
+            </td>
+        </tr>
+         </table>
+         <table class="tab5">
+            <tr>
+                <td>
+                   <center>
+                    <table class="size">
+                        <tr>
+                            <td>
+                              <center>
+                                <div class="bot">SPECIAL OFFER</div>
+                                <div class="bot2">
+                                    50% discount on your first order every month through the summer!
+                                </div>
+                            </center>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="hawi-card4">
+                                <table class="card4">
+                                    <tr>
+                                        <td>
+                                            <img src="https://i.imgur.com/U4CAjRG.jpg" alt="" width="100%">
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table class="card4" style="text-align: left;padding-left: 0.5cm;">
+                                    <tr>
+                                        <td >
+                                            <div class="bot3">Match your face shape, style, and personality. New season, new expressions. We ship to over 100 countries worldwide!</div>
+                                            <div class="bot3" style="margin-top: 0.2cm;">USE THIS COUPON AT CHECKOUT:</div>
+                                            <div class="buttme">sungl45535</div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                   </center>
+                </td>
+            </tr>
+         </table>
+         <table class="tab6">
+            <tr>
+                <td>
+                     <center>
+                        <table class="size" style="margin-top: 1cm;">
+                            <tr>
+                                <td class="hawi-card5">
+                                   <table class="card5">
+                                    <tr>
+                                       <td>
+                                         <img src="https://i.imgur.com/LjbinEI.jpg" alt="" width="100%">
+                                       </td>
+                                    </tr>
+                                   </table>
+                                   <table class="card5">
+                                    <tr>
+                                        <td style="text-align: left;">
+                                           <div class="bot" style="background-color:#1faa00b9;text-align: center;font-size: 0.3cm;width: 160px;font-weight: 600;padding: 0.2cm 0;margin-bottom: 0.5cm;">DISCOUNTED PRODUCT</div>
+                                           <div style="font-size: 0.6cm;font-family: Helvetica;color: #424242;">Girella</div>
+                                            <div style="font-size: 0.65cm;font-family:Trebuchet MS ;color: #f44336;margin-top: 0.2cm;margin-bottom: 0.3cm;"><del style="color: #424242ae;">$100</del>   $89</div>
+                                           <div class="bot3" >The sooner you start taking care of your eyesight, the better it is for your eyes' health.</div>
+                                           <div style="margin-top: 0.8cm;"><a href="#" class="button2">SHOP NOW</a></div>
+                                        </td>
+                                    </tr>
+                                   </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="size" style="margin-top: 1cm;margin-bottom: 1cm;">
+                            <tr>
+                                <td class="hawi-card5">
+                                   <table class="card5">
+                                    <tr>
+                                       <td>
+                                         <img src="https://i.imgur.com/aET1vha.jpg" alt="" width="100%">
+                                       </td>
+                                    </tr>
+                                   </table>
+                                   <table class="card5">
+                                    <tr>
+                                        <td style="text-align: left;">
+                                           <div class="bot" style="background-color:#1faa00b9;text-align: center;font-size: 0.3cm;width: 160px;font-weight: 600;padding: 0.2cm 0;margin-bottom: 0.5cm;">DISCOUNTED PRODUCT</div>
+                                           <div style="font-size: 0.6cm;font-family: Helvetica;color: #424242;">Girella</div>
+                                            <div style="font-size: 0.65cm;font-family:Trebuchet MS ;color: #f44336;margin-top: 0.2cm;margin-bottom: 0.3cm;"><del style="color: #424242ae;">$100</del>   $89</div>
+                                           <div class="bot3" >The sooner you start taking care of your eyesight, the better it is for your eyes' health.</div>
+                                           <div style="margin-top: 0.8cm;"><a href="#" class="button2">SHOP NOW</a></div>
+                                        </td>
+                                    </tr>
+                                   </table>
+                                </td>
+                            </tr>
+                        </table>
+                     </center>
+                </td>
+            </tr>
+         </table>
+         <table class="tab5">
+            <tr>
+                 <td>
+                    <center>
+                        <table class="size">
+                            <tr>
+                                <td style="text-align: center;padding: 1cm 0 0 0;">
+                                   <div style="color: #424242;font-size: 0.6cm;">Watch our video</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;padding: 0.3cm 0 0.5cm 0;"> 
+                                   <center> <div style=" width: 50px;height: 0.07cm; background-color: #424242;"></div></center>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="back">
+                                    <center>
+                                  <img src="https://i.imgur.com/BMLOsGJ.png" alt="">
+                                </center>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0.5cm 0;">
+                                    <center>
+                                    <div style="font-family: Lucida Sans Unicode; font-size: 0.45cm; color:#424242;min-width:300px;width: 100%;max-width: 500px;line-height: 30px;margin-top: 0.5cm;">Recognised as a global leader in speciality sun, Shop Around is the premium destination for fashion, luxury and sports eyewear.
+                                        See how the light plays with hues, silver and gold.</div>
+                                        <div style="margin-top: 0.8cm;"><a href="#" class="button3">SHOP NOW</a></div>
+                            <div style="margin-top:1cm;"><a href="#" style="color: #424242; font-size: 0.3cm;">FIND A STORE</a></div>
+
+                                    </center>
+                                </td>
+                            </tr>
+                        </table>
+                    </center>
+                 </td>
+            </tr>
+         </table>
+
+         <table class="tab7">
+            <tr>
+                <td>
+                    <center>
+                        <table class="size" style="border: 2px dashed #42424230;border-radius: 10px;padding-bottom: 0.8cm;padding-left: 0.4cm;">
+                            <tr>
+                                <td class="hawi-card5" style="background-color: inherit;margin-top: 0;padding: 0;">
+                                   <table class="card5">
+                                    <tr>
+                                       <td style="background-color: white;height:230px;">
+                                         <img src="https://i.imgur.com/OfVbNcB.jpg" alt="" width="85%">
+                                       </td>
+                                    </tr>
+                                   </table>
+                                   <table class="card5">
+                                    <tr>
+                                        <td style="text-align: left;">
+                                           <div style="font-size: 0.6cm;font-family: Helvetica;color: #424242;">Doppio Ponte</div>
+                                            <div style="font-size: 0.65cm;font-family:Trebuchet MS ;color: #f44336;margin-top: 0.5cm;margin-bottom: 0.3cm;"><del style="color: #424242ae;">$100</del>   $89</div>
+                                           <div class="bot3" >Find your retro inspiration! This frame comes with a two years warranty.</div>
+                                           <div style="margin-top: 0.8cm;"><a href="#" class="button2" style="background-color: white;">SHOP NOW</a></div>
+                                        </td>
+                                    </tr>
+                                   </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="size" style="margin-top: 0.5cm;border: 2px dashed #42424230;border-radius: 10px;padding-bottom: 0.8cm;padding-left: 0.4cm;">
+                            <tr>
+                                <td class="hawi-card5" style="background-color: inherit; margin-top: 0; padding: 0;">
+                                   <table class="card5">
+                                    <tr>
+                                       <td style="background-color: white;height:230px;">
+                                         <img src="https://i.imgur.com/d6R83nU.jpg" alt="" width="85%">
+                                       </td>
+                                    </tr>
+                                   </table>
+                                   <table class="card5">
+                                    <tr>
+                                        <td style="text-align: left;">
+                                           <div style="font-size: 0.6cm;font-family: Helvetica;color: #424242;">Lusia</div>
+                                            <div style="font-size: 0.65cm;font-family:Trebuchet MS ;color: #f44336;margin-top: 0.5cm;margin-bottom: 0.3cm;"><del style="color: #424242ae;">$100</del>   $89</div>
+                                           <div class="bot3" >This oversized design is the ultimate luxury piece for this season.</div>
+                                           <div style="margin-top: 0.8cm;"><a href="#" class="button2" style="background-color: white;">SHOP NOW</a></div>
+                                        </td>
+                                    </tr>
+                                   </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="size" style="margin-top: 0.5cm;border: 2px dashed #42424230;border-radius: 10px;padding-bottom: 0.8cm;padding-left: 0.4cm;">
+                            <tr>
+                                <td class="hawi-card5" style="background-color: inherit; margin-top: 0;padding: 0;">
+                                   <table class="card5">
+                                    <tr>
+                                       <td style="background-color: white;height:230px;">
+                                         <img src="https://i.imgur.com/fi6KDyw.jpg" alt="" width="85%">
+                                       </td>
+                                    </tr>
+                                   </table>
+                                   <table class="card5">
+                                    <tr>
+                                        <td style="text-align: left;">
+                                           <div style="font-size: 0.6cm;font-family: Helvetica;color: #424242;">Doppio Ponte</div>
+                                            <div style="font-size: 0.65cm;font-family:Trebuchet MS ;color: #f44336;margin-top: 0.5cm;margin-bottom: 0.3cm;"><del style="color: #424242ae;">$100</del>   $89</div>
+                                           <div class="bot3" >Find your retro inspiration! This frame comes with a two years warranty.</div>
+                                           <div style="margin-top: 0.8cm;"><a href="#" class="button2" style="background-color: white;">SHOP NOW</a></div>
+                                        </td>
+                                    </tr>
+                                   </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="size" style="padding: 0 0cm;margin-top: 1cm;">
+                            <tr>
+                                <td>
+                                    <center>
+                                    <table class="img-back">
+                                 <tr>
+                                    <td>
+                                        <table class="color-back">
+                                            <tr>
+                                                <td>
+                                        <center>
+                                            <div style="font-size: 0.9cm;font-family: Helvetica,Arial, sans-serif ;color: white;padding: 1.6cm 0 1cm 0;">Unique Gift Ideas</div>
+                                            <div class="bot3" style="color: white;max-width: 500px;">Searching for a unique gift but not quite sure what to purchase? Shop Around Gift Cards make the perfect gift.</div>
+                                            <div style="margin:1cm 0 0 0;padding: 0 0 1.8cm 0;"><a href="#" class="button1" style="border: 1px solid white;">VIEW MORE !</a></div>
+                                        </center>
+                                                </td>
+                                            </tr>
+                                         </table>
+                                    </td>
+                                 </tr>
+                                    </table>
+                                </center>
+                                </td>
+                                </tr>                       
+                         </table>
+                    </center>
+                </td>
+            </tr>
+         </table>
+         <table class="tabfinal">
+            <tr>
+                <td>
+                <center>
+                   <table class="size">
+                    <tr>
+                        <td class="hawi-opt">
+                         <table class="opt">
+                            <tr>
+                                <td class="hawi-op">
+                                    <center>
+                                  <table class="op">
+                                    <tr>
+                                        <td>
+                                         <center>
+                                          <img src="https://i.imgur.com/f1n5Qlt.png" alt="">
+                                          <div style="font-size: 0.38cm;font-family: Arial, Helvetica, sans-serif;color: #424242;padding: 0.3cm 0;max-width: 100px;">Hight quality comes first</div>
+                                        </center>
+                                        </td>
+                                    </tr>
+                                  </table>
+                                  <table class="op">
+                                    <tr>
+                                        <td>
+                                         <center>
+                                          <img src="https://i.imgur.com/XXDxznu.png" alt="">
+                                          <div style="font-size: 0.38cm;font-family: Arial, Helvetica, sans-serif;color: #424242;padding: 0.3cm 0;max-width: 100px;">Free shipping everywhere</div>
+                                        </center>
+                                        </td>
+                                    </tr>
+                                  </table>
+                                </center>
+                                </td>
+                            </tr>
+                         </table>
+
+                         <table class="opt">
+                            <tr>
+                                <td class="hawi-op">
+                                    <center>
+                                  <table class="op">
+                                    <tr>
+                                        <td style="">
+                                         <center>
+                                          <img src="https://i.imgur.com/cbv9GNc.png" alt="">
+                                          <div style="font-size: 0.38cm;font-family: Arial, Helvetica, sans-serif;color: #424242;padding: 0.3cm 0;max-width: 100px;">Get help buying</div>
+                                        </center>
+                                        </td>
+                                    </tr>
+                                  </table>
+                                  <table class="op">
+                                    <tr>
+                                        <td>
+                                         <center>
+                                          <img src="https://i.imgur.com/f3qQcCw.png" alt="">
+                                          <div style="font-size: 0.38cm;font-family: Arial, Helvetica, sans-serif;color: #424242;padding: 0.3cm 0;max-width: 100px;">Personal Setup</div>
+                                        </center>
+                                        </td>
+                                    </tr>
+                                  </table>
+                                </center>
+                                </td>
+                            </tr>
+                         </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5cm 0.5cm;">
+                            <div style="width: 100%;background-color: #4242421d;height: 1px;"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5cm;">
+                             <center>
+                                <table style="display: inline-block; margin-left: 0.6cm;">
+                                    <tr>
+                                        <td>
+                                            <a href="#"><img src="https://i.imgur.com/oxW5gzs.png" alt=""></a>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <table style="display: inline-block;margin-left: 0.6cm;">
+                                    <tr>
+                                        <td>
+                                            <a href="#"><img src="https://i.imgur.com/NHijkpY.png" alt=""></a>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table style="display: inline-block;margin-left: 0.6cm;">
+                                    <tr>
+                                        <td>
+                                            <a href="#"><img src="https://i.imgur.com/UcV02Hf.png" alt=""></a>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table style="display: inline-block;margin-left: 0.6cm;">
+                                    <tr>
+                                        <td>
+                                            <a href="#"><img src="https://i.imgur.com/ECzvft4.png" alt=""></a>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table>
+                                    <tr>
+                                        <td style="text-align: center;font-size: 0.35cm;color: #4242427a;line-height: 20px;padding: 0.5cm 0 0 0;">
+                                            <div>8415 Lila Crescent Dachchester, NU T7X 4A1</div>
+                                            <div>Copyright © 0123 Shop Around</div>
+                                        </td>
+                                    </tr>
+                                </table>
+                             </center>
+                        </td>
+                    </tr>
+                   </table>
+                </center>
+                </td>
+            </tr>
+         </table>
+
+    
+        
+
+</body>
+</html>
